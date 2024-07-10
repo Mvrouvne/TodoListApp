@@ -9,9 +9,12 @@
 
     {% if request.user.is_authenticated %}
     <form method="POST" action="{% url 'logout' %}">
-    {% csrf_token %}
-    <button type="submit">Logout</button>
+        {% csrf_token %}
+        <button type="submit" style="background-color: transparent; border: none; color: white; cursor: pointer; font-size: 16px;">
+            Logout
+        </button>
     </form>
+    
     {% else %}
     <a href="{% url 'login' %}">Login</a> {% endif %}
 </div>
@@ -54,7 +57,7 @@
     {% empty %}
     <div style="text-align: center; padding-bottom: 10px; line-height: 1em;">
         <h3>No new tasks are created.</h3>
-        <h3>Create a <a style="text-decoration: none; color: #e53935;" href="{% url 'task-create' %}">New task</a> ! </h3>
+        <h3>Create a <a style="text-decoration: none; color: #e53935;" href="{% url 'taskcreate' %}">New task</a> ! </h3>
     </div>
     {% endfor %}
 </div>
