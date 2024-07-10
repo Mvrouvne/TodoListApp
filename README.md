@@ -28,3 +28,6 @@ This is a TodoApp web application built using Django, following the MVT architec
 - Delete Tasks: Users can remove tasks that are no longer needed.
 - User Authentication: Secure user registration and login system to manage personal tasks.
 - Responsive Design: The application is designed to be responsive and user-friendly on all devices.
+
+All credits to Dennis Ivy (YouTube) that teached me to build this little App
+
